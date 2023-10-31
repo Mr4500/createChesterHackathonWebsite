@@ -7,9 +7,9 @@
 body{
     width: 100%;
     height: 100%;
-
-    background-image:url('../images/ghostBackground.png');
-    background-repeat: repeat-x;
+    background-position: 0px 150px;
+    background-image:url('../images/ghostBackgroundImage.jpg');
+    background-size: cover;
 }
 
 .topNavbar{
@@ -38,8 +38,6 @@ body{
 
     margin-top: 25px;
     margin-left: 25px;
-
-    background-color: antiquewhite;
 }
 
 .topNavbarButtons{
@@ -47,7 +45,7 @@ body{
     right: 0px;
 }
 
-.Button{
+.topNavbarButton{
     position: relative;
     background-color: whitesmoke;
     border-radius: 20px;
@@ -56,13 +54,38 @@ body{
 
     right: 0px;
     margin: 50px 25px 50px 0px;
+
+    border:3px solid purple;
+    box-shadow: 1px 4px 0px 0px purple;
+}
+
+
+.startTrickOrTreatingButton{
+    position: absolute;
+
+    height: 150px;
+    width: 700px;
+
+    top: calc(50% - 75px);
+    left: calc(50% - 350px);
+
+    background-color: whitesmoke;
+
+    border:3px solid orange;
+    border-radius: 30px;
+    box-shadow: 1px 4px 0px 0px orange;
+
+    text-align: center;
+    font-size: 100px;
+    text-decoration: none;
+    color: orange;
 }
 
 .bottomNavbar{
-    position: absolute;
+    position: fixed;
 
-    bottom: 0px;
-    left: 0px;
+    bottom:0px;
+    right: 0px;
 
     width: 100%;
     height: 100px;
@@ -70,9 +93,37 @@ body{
     background-color: #8B139F;
 }
 
-/* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 925px) {
-    .topNavbarButtons {
-      width: 200px;
-    }
-  }
+.bottomNavbarButtons{
+    position: absolute;
+    float: right;
+    right: 0px;
+}
+
+.bottomNavbarButton{
+    position: relative;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+
+    right: 0px;
+    margin: 25px;
+
+    border:3px solid purple;
+    box-shadow: 1px 4px 0px 0px purple;
+}
+
+.bottomNavbarInfo{
+    position: absolute;
+    float: left;
+    left: 0px;
+}
+
+.bottomNavbarText{
+    font-family: 'Nosifer';font-size: 22px;
+}
+
+.SocialMediaImg{
+    top: 0px;
+    margin-left: 5px;
+}
