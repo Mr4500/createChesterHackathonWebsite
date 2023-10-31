@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+
+    background-image:url('../images/ghostBackground.png');
+    background-repeat: repeat-x;
+}
+
+.topNavbar{
+    position: fixed;
+
+    top:0px;
+    right: 0px;
+
+    width: 100%;
+    height: 150px;
+
+    background-color: #8B139F;
+}
+
+.topNavbarLogo{
+    position: absolute;
+
+    left: 0px;
+}
+
+.Logo{
+    position: relative;
+
+    width: 100px;
+    height: 100px;
+
+    margin-top: 25px;
+    margin-left: 25px;
+
+    background-color: antiquewhite;
+}
+
+.topNavbarButtons{
+    position: absolute;
+    right: 0px;
+}
+
+.Button{
+    position: relative;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+
+    right: 0px;
+    margin: 50px 25px 50px 0px;
+}
+
+.bottomNavbar{
+    position: absolute;
+
+    bottom: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 100px;
+
+    background-color: #8B139F;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 925px) {
+    .topNavbarButtons {
+      width: 200px;
+    }
+  }
