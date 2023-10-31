@@ -7,14 +7,10 @@
     <title>Group F</title>
 
     <link href="static/css/essentails.css" rel="stylesheet" type="text/css">
-    <link href="static/css/index.css" rel="stylesheet" type="text/css">
+    <link href="static/css/map.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
 </head>
 <body>
-    <div class="startTrickOrTreating">
-        <button class="startTrickOrTreatingButton" onclick="location.href='http://10.81.68.119:3025/TrickOrTreat';">Trick Or Treat</button>
-    </div>
-
     <nav class="topNavbar">
         <div class="topNavbarLogo">
             <img class="Logo" src="../static/images/ghostLogo.png"></img>
@@ -26,6 +22,28 @@
             <button class="topNavbarButton" onclick="location.href='http://10.81.68.119:3025/Opt-In';">Opt-In</button>
         </div>
     </nav>
+
+    <div class="DropDownForms">
+        <form class="DropDownForm">
+            <label class="" for="Distance">Select Distance</label>
+            <select name="Distance" id="Distance">
+                <option class="DropDownOption" value="lessThanFiveMiles">Less Than 5 Miles</option>
+                <option class="DropDownOption" value="FiveMiles">5 Miles</option>
+                <option class="DropDownOption" value="TenMiles">10 Miles</option>
+                <option class="DropDownOption" value="FifteenMiles">15 Miles</option>
+            </select>
+            
+            <label for="JourneyTimeInput">Enter Journey Time</label>
+            <input class="JourneyTimeInput"></input>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="GoogleMapsIFrame">
+        <iframe class="MapIFrame" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4426.185828369176!2d-2.8932002186706893!3d53.19502729127816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1698763966288!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
     <nav class="bottomNavbar">
         
         <div class="bottomNavbarInfo">

@@ -1,29 +1,7 @@
-.startTrickOrTreatingButton{
-    position: absolute;
-
-    height: 150px;
-    width: 700px;
-
-    top: calc(50% - 75px);
-    left: calc(50% - 350px);
-
-    background-color: whitesmoke;
-
-    border:3px solid orange;
-    border-radius: 30px;
-    box-shadow: 1px 4px 0px 0px orange;
-
-    text-align: center;
-    font-size: 100px;
-    text-decoration: none;
-    color: orange;
-}
-
 /* Top Navbar CSS */
 *{
     margin:0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{

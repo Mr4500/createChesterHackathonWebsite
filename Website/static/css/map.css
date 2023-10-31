@@ -1,0 +1,28 @@
+.MapIFrame{
+    position: absolute;
+
+    height: calc(100% - 270px);
+    width: calc(75% - 15px);
+
+    top: 160px;
+    margin-left: 10px;
+
+    float: left;
+}
+
+.DropDownForms{
+    position: absolute;
+
+    top:160px;
+    right:10px;
+
+    width: calc(25% - 15px);
+}
+
+option, label, select, input, button{
+    position: relative;
+    width: 100%;
+
+    color: orange;
+    
+}
