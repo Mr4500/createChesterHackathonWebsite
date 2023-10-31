@@ -7,21 +7,35 @@
     <title>Group F</title>
 
     <link href="static/css/index.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
 </head>
 <body>
     <nav class="topNavbar">
         <div class="topNavbarLogo">
-            <div class="Logo"></div>
+            <img class="Logo" src="../static/images/ghostLogo.png"></img>
         </div>
         <div class="topNavbarButtons">
-            <button class="Button">Home</button>
-            <button class="Button">About</button>
-            <button class="Button">Reviews</button>
-            <button class="Button">Opt-In</button>
+            <button class="topNavbarButton" onclick="location.href='http://10.81.68.119:3025/Home';">Home</button>
+            <button class="topNavbarButton" onclick="location.href='http://10.81.68.119:3025/About';">About</button>
+            <button class="topNavbarButton" onclick="location.href='http://10.81.68.119:3025/Reviews';">Reviews</button>
+            <button class="topNavbarButton" onclick="location.href='http://10.81.68.119:3025/Opt-In';">Opt-In</button>
         </div>
     </nav>
+    <div class="startTrickOrTreating">
+        <button class="startTrickOrTreatingButton" onclick="location.href='http://10.81.68.119:3025/TrickOrTreat';">Trick Or Treat</button>
+    </div>
     <nav class="bottomNavbar">
-
+        
+        <div class="bottomNavbarInfo">
+            <p class="bottomNavbarText">Find Us At:</p>
+            <img class="SocialMediaImg" src="../static/images/igLogo.png"></img>
+            <img class="SocialMediaImg" src="../static/images/xLogo.png"></img>
+            <img class="SocialMediaImg" src="../static/images/fbLogo.png"></img>
+        </div>
+        <div class="bottomNavbarButtons">
+            <button class="bottomNavbarButton" onclick="location.href='http://10.81.68.119:3025/Opt-Out';">Opt-Out</button>
+        </div>
+        
     </nav>
 </body>
 </html>
